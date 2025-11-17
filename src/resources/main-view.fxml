@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="src.controller.MainController">
+
+    <center>
+        <VBox spacing="15" alignment="CENTER">
+            <children>
+
+                <Button fx:id="donutsBtn" text="Order Donuts"
+                        onAction="#openDonutView">
+                    <graphic>
+                        <ImageView fitWidth="32" fitHeight="32"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@/images/donut.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="coffeeBtn" text="Order Coffee"
+                        onAction="#openCoffeeView">
+                    <graphic>
+                        <ImageView fitWidth="32" fitHeight="32"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@/images/coffee.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="sandwichBtn" text="Order Sandwich"
+                        onAction="#openSandwichView">
+                    <graphic>
+                        <ImageView fitWidth="32" fitHeight="32"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@/images/sandwich.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Separator/>
+
+                <Button fx:id="currentOrderBtn" text="View Current Order"
+                        onAction="#openCurrentOrderView"/>
+
+                <Button fx:id="allOrdersBtn" text="View All Orders"
+                        onAction="#openAllOrdersView"/>
+
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

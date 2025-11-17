@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="src.controller.SandwichController">
+
+    <left>
+        <VBox spacing="10" padding="10">
+            <children>
+                <Label text="Bread:"/>
+                <ComboBox fx:id="breadCombo"/>
+
+                <Label text="Protein:"/>
+                <ComboBox fx:id="proteinCombo"/>
+
+                <Label text="Add-ons:"/>
+                <ListView fx:id="addOnList" prefHeight="140"/>
+
+                <Label text="Quantity:"/>
+                <Spinner fx:id="quantitySpinner" editable="true"/>
+
+                <Label text="Price:"/>
+                <Label fx:id="priceLabel" text="$0.00"/>
+
+                <Button text="Add to Order" onAction="#addSandwichToOrder"/>
+            </children>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox alignment="CENTER" spacing="10" padding="10">
+            <children>
+                <Label text="Sandwich Preview"/>
+                <ImageView fx:id="sandwichImage" fitWidth="220" fitHeight="220"
+                           preserveRatio="true"/>
+            </children>
+        </VBox>
+    </center>
+
+</BorderPane>

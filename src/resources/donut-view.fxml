@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="src.controller.DonutController">
+
+    <left>
+        <VBox spacing="10" alignment="CENTER_LEFT" prefWidth="250" padding="10">
+            <children>
+                <Label text="Donut Type:"/>
+                <ComboBox fx:id="typeCombo"/>
+
+                <Label text="Flavor:"/>
+                <ComboBox fx:id="flavorCombo"/>
+
+                <Label text="Quantity:"/>
+                <Spinner fx:id="quantitySpinner" editable="true"/>
+
+                <Label text="Price:"/>
+                <Label fx:id="runningPriceLabel" text="$0.00"/>
+
+                <Button fx:id="addButton" text="Add to Order"
+                        onAction="#addDonutToOrder"/>
+            </children>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox spacing="10" alignment="CENTER" padding="10">
+            <children>
+                <Label text="Donut Preview"/>
+                <ImageView fx:id="donutImage" fitHeight="200" fitWidth="200"
+                           preserveRatio="true"/>
+            </children>
+        </VBox>
+    </center>
+
+</BorderPane>

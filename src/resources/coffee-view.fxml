@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="src.controller.CoffeeController">
+
+    <left>
+        <VBox spacing="10" padding="10">
+            <children>
+                <Label text="Cup Size:"/>
+                <ComboBox fx:id="sizeCombo"/>
+
+                <Label text="Add-ins:"/>
+                <ListView fx:id="addInsList" prefHeight="160"/>
+
+                <Label text="Quantity:"/>
+                <Spinner fx:id="quantitySpinner" editable="true"/>
+
+                <Label text="Price:"/>
+                <Label fx:id="priceLabel" text="$0.00"/>
+
+                <Button text="Add to Order" onAction="#addCoffeeToOrder"/>
+            </children>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox alignment="CENTER" spacing="10" padding="10">
+            <children>
+                <Label text="Coffee Preview"/>
+                <ImageView fx:id="coffeeImage" fitWidth="200" fitHeight="200"
+                           preserveRatio="true"/>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

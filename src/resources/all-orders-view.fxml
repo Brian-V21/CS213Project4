@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="src.controller.AllOrdersController">
+
+    <left>
+        <VBox spacing="5" padding="10">
+            <children>
+                <Label text="Orders:"/>
+                <ListView fx:id="ordersList" prefWidth="220" prefHeight="300"/>
+                <HBox spacing="10">
+                    <children>
+                        <Button text="Cancel Order" onAction="#cancelSelectedOrder"/>
+                        <Button text="Export..." onAction="#exportOrders"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox spacing="5" padding="10">
+            <children>
+                <Label text="Order Details:"/>
+                <ListView fx:id="itemsList" prefHeight="300"/>
+                <HBox spacing="10">
+                    <children>
+                        <Label text="Total:"/>
+                        <Label fx:id="totalLabel" text="$0.00"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+
+</BorderPane>
