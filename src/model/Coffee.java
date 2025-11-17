@@ -1,9 +1,9 @@
-package model;
-
-import enums.CoffeeAddIn;
-import enums.CupSize;
+package src.model;
 
 import java.util.EnumSet;
+
+import src.enums.CoffeeAddIn;
+import src.enums.CupSize;
 
 public class Coffee extends MenuItem {
     private CupSize size;

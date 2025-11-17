@@ -1,5 +1,5 @@
-package enums;
+package src.enums;
 
-public class CupSize {
-
+public enum CupSize {
+    SHORT, TALL, GRANDE, VENTI
 }

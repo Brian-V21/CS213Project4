@@ -1,5 +1,5 @@
-package enums;
+package src.enums;
 
-public class Protein {
-
+public enum Protein {
+    BEEF, CHICKEN, SALMON
 }

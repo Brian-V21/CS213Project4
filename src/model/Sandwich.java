@@ -1,10 +1,10 @@
-package model;
-
-import enums.Bread;
-import enums.SandwichAddOn;
-import enums.Protein;
+package src.model;
 
 import java.util.EnumSet;
+
+import src.enums.Bread;
+import src.enums.Protein;
+import src.enums.SandwichAddOn;
 
 public class Sandwich extends MenuItem {
     private Bread bread;

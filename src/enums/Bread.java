@@ -1,5 +1,5 @@
-package enums;
+package src.enums;
 
-public class Bread {
-
+public enum Bread {
+    BAGEL, WHEAT, SOURDOUGH
 }

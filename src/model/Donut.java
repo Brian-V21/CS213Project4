@@ -1,7 +1,7 @@
-package model;
+package src.model;
 
-import enums.DonutFlavor;
-import enums.DonutType;
+import src.enums.DonutFlavor;
+import src.enums.DonutType;
 
 
 public class Donut extends MenuItem {

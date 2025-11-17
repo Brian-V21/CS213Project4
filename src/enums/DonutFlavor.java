@@ -1,5 +1,5 @@
-package enums;
+package src.enums;
 
-public class DonutFlavor {
-
+public enum DonutFlavor {
+    GLAZED, CHOCOLATE, STRAWBERRY, BLUEBERRY, MAPLE, JELLY
 }

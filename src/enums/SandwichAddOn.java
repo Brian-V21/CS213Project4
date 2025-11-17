@@ -1,5 +1,5 @@
-package enums;
+package src.enums;
 
-public class SandwichAddOn {
-
+public enum SandwichAddOn {
+    LETTUCE, TOMATOES, ONIONS, CHEESE
 }

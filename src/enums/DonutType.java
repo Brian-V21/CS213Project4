@@ -1,5 +1,5 @@
-package enums;
+package src.enums;
 
-public class DonutType {
-
+public enum DonutType {
+    YEAST, CAKE, HOLE, SEASONAL
 }

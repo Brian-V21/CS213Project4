@@ -1,5 +1,5 @@
-package enums;
+package src.enums;
 
-public class CoffeeAddIn {
-
+public enum CoffeeAddIn {
+    WHIPPED_CREAM, VANILLA, MILK_2, CARAMEL, MOCHA
 }
